@@ -51,7 +51,7 @@ Where parameter1..N, would be the parameters defined in the *signature* section.
 The same conventions to pass parameters as any other confluence macro should be honored. For instance a call a transformation of the Mule HTTP schema and its two included schemas would look like this:
 
 ```
-{xslt:output=wiki|style=#https://raw.githubusercontent.com/mulesoft/mule-tool-schema-doc/master/src/main/resources/schemadoc.xsl|source=#http://www.mulesoft.org/schema/mule/http/3.5/mule-http.xsd|includedSchema1=http://www.mulesoft.org/schema/mule/core/3.5/mule.xsd|includedSchema2=http://www.mulesoft.org/schema/mule/tcp/3.5/mule-tcp.xsd}
+{xslt:output=wiki|style=#https://raw.githubusercontent.com/mulesoft/mule-tool-schema-doc/schemadoc-1.x/src/main/resources/schemadoc.xsl|source=#http://www.mulesoft.org/schema/mule/http/3.5/mule-http.xsd|includedSchema1=http://www.mulesoft.org/schema/mule/core/3.5/mule.xsd|includedSchema2=http://www.mulesoft.org/schema/mule/tcp/3.5/mule-tcp.xsd}
 {xslt}
 ```
 
@@ -72,7 +72,7 @@ Transport documentation includes the following:
 Show all elements from the Mule HTTP schema:
 
 ```
-{xslt:output=wiki|style=#https://raw.githubusercontent.com/mulesoft/mule-tool-schema-doc/master/src/main/resources/schemadoc.xsl|source=#http://www.mulesoft.org/schema/mule/http/3.5/mule-http.xsd|includedSchema1=http://www.mulesoft.org/schema/mule/core/3.5/mule.xsd|includedSchema2=http://www.mulesoft.org/schema/mule/tcp/3.5/mule-tcp.xsd}
+{xslt:output=wiki|style=#https://raw.githubusercontent.com/mulesoft/mule-tool-schema-doc/schemadoc-1.x/src/main/resources/schemadoc.xsl|source=#http://www.mulesoft.org/schema/mule/http/3.5/mule-http.xsd|includedSchema1=http://www.mulesoft.org/schema/mule/core/3.5/mule.xsd|includedSchema2=http://www.mulesoft.org/schema/mule/tcp/3.5/mule-tcp.xsd}
 {xslt}
 ```
 Here the outstanding elements are:
@@ -85,7 +85,7 @@ Here the outstanding elements are:
 Show common elements from the Mule HTTP schema:
 
 ```
-{xslt:output=wiki|style=#https://raw.githubusercontent.com/mulesoft/mule-tool-schema-doc/master/src/main/resources/schemadoc.xsl|source=#http://www.mulesoft.org/schema/mule/http/3.5/mule-http.xsd|includedSchema1=http://www.mulesoft.org/schema/mule/core/3.5/mule.xsd|includedSchema2=http://www.mulesoft.org/schema/mule/tcp/3.5/mule-tcp.xsd|display=common}
+{xslt:output=wiki|style=#https://raw.githubusercontent.com/mulesoft/mule-tool-schema-doc/schemadoc-1.x/src/main/resources/schemadoc.xsl|source=#http://www.mulesoft.org/schema/mule/http/3.5/mule-http.xsd|includedSchema1=http://www.mulesoft.org/schema/mule/core/3.5/mule.xsd|includedSchema2=http://www.mulesoft.org/schema/mule/tcp/3.5/mule-tcp.xsd|display=common}
 {xslt}
 ```
 
@@ -112,7 +112,7 @@ Module documentation includes the following:
 Show all elements from the XML module schema:
 
 ```
-{xslt:output=wiki|style=#https://raw.githubusercontent.com/mulesoft/mule-tool-schema-doc/master/src/main/resources/schemadoc.xsl|source=#http://www.mulesoft.org/schema/mule/xml/3.5/mule-xml.xsd|includedSchema1=http://www.mulesoft.org/schema/mule/core/3.5/mule.xsd|schemaType=module}
+{xslt:output=wiki|style=#https://raw.githubusercontent.com/mulesoft/mule-tool-schema-doc/schemadoc-1.x/src/main/resources/schemadoc.xsl|source=#http://www.mulesoft.org/schema/mule/xml/3.5/mule-xml.xsd|includedSchema1=http://www.mulesoft.org/schema/mule/core/3.5/mule.xsd|schemaType=module}
 {xslt}
 ```
 
@@ -124,7 +124,7 @@ Here the outstanding elements are:
 Show specific elements from the XML module schema:
 
 ```
-{xslt:output=wiki|style=#https://raw.githubusercontent.com/mulesoft/mule-tool-schema-doc/master/src/main/resources/schemadoc.xsl|source=#http://www.mulesoft.org/schema/mule/xml/3.5/mule-xml.xsd|includedSchema1=http://www.mulesoft.org/schema/mule/core/3.5/mule.xsd|schemaType=module|display=specific}
+{xslt:output=wiki|style=#https://raw.githubusercontent.com/mulesoft/mule-tool-schema-doc/schemadoc-1.x/src/main/resources/schemadoc.xsl|source=#http://www.mulesoft.org/schema/mule/xml/3.5/mule-xml.xsd|includedSchema1=http://www.mulesoft.org/schema/mule/core/3.5/mule.xsd|schemaType=module|display=specific}
 {xslt}
 ```
 Here the outstanding elements are:
@@ -143,7 +143,7 @@ Single element documentation includes just the following:
 Show a selected transformer from the Mule XML Module.
 
 ```
-{xslt:output=wiki|style=#https://raw.githubusercontent.com/mulesoft/mule-tool-schema-doc/master/src/main/resources/schemadoc.xsl|source=#http://www.mulesoft.org/schema/mule/xml/3.5/mule-xml.xsd|includedSchema1=http://www.mulesoft.org/schema/mule/core/3.5/mule.xsd|includedSchema2=http://www.mulesoft.org/schema/mule/tcp/3.5/mule-tcp.xsd|schemaType=single|singleElementName=dom-to-xml-transformer}
+{xslt:output=wiki|style=#https://raw.githubusercontent.com/mulesoft/mule-tool-schema-doc/schemadoc-1.x/src/main/resources/schemadoc.xsl|source=#http://www.mulesoft.org/schema/mule/xml/3.5/mule-xml.xsd|includedSchema1=http://www.mulesoft.org/schema/mule/core/3.5/mule.xsd|includedSchema2=http://www.mulesoft.org/schema/mule/tcp/3.5/mule-tcp.xsd|schemaType=single|singleElementName=dom-to-xml-transformer}
 {xslt}
 ```
 
