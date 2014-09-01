@@ -3,7 +3,13 @@
     <!-- We're rendering Confluence's Wiki Markup, a derivative of textile.
      For more information about it visit:
      https://confluence.atlassian.com/display/CONF34/Confluence+Notation+Guide+Overview -->
-    <xsl:output method="text" standalone="no" indent="no" />
+    <xsl:output method="text" standalone="no" indent="no" use-character-maps="escape-wiki-chars" />
+
+    <!-- Escape map for special characters of wiki markup -->
+    <xsl:character-map name="escape-wiki-chars">
+        <xsl:output-character character="[" string="[["/>
+        <xsl:output-character character="]" string="]]"/>
+    </xsl:character-map>
 
 
     <!-- which elements should be displayed. Value can be one of:
