@@ -16,7 +16,7 @@ It can generate full _transport or module_ documentation aswell as _specific_ el
     - *element name*: The name of a single element to render.
 - **schemaType**: defines the type of schema this XSLT is processing.
     - *transport*: will treat the XSD as a Mule's transport. ***Default value***.
-    - *module*: will treat the XSD as a Mule's transport.
+    - *module*: will treat the XSD as a Mule's module.
     - *single*: will only render one single element of the schema.
 - **singleElementName**: *in case the schemaType is defined as single* the singleElementName should specify the exact single element that should be shown.
 - **includedSchema1**: Absolute URL of an Schema that is included in the source.
